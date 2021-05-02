@@ -11,13 +11,12 @@ export default createGlobalStyle`
   html, body, #root {
     max-width: 100vw;
     max-height: 100vh;
-
     width: 100%;
     height: 100%;
   }
 
   body {
-    background: ${colors.secundary};
+    background: ${colors.secondary};
     color: ${colors.primary};
     font: 400 1rem Poppins;
     border: 0;
@@ -38,9 +37,9 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  @media(min-width: 700px){
+  @media(max-width: 840px){
     :root{
-      font-size: 72.5%;
+      font-size: 62.5%;
     }
   }
 `;
