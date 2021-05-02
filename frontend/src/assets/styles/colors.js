@@ -4,7 +4,8 @@ export default {
   tertiary: '#CCCCCC',
   quaternary: '#6b6e7d',
 
-  info: '#36679E',
-  success: '#00c57e',
-  failure: '#ff5869',
+  black: '#000000',
+  white: '#ffffff',
+  green: '#00c57e',
+  red: '#ff5869',
 };
