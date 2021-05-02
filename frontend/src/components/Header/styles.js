@@ -49,7 +49,7 @@ export const Menu = styled.ul`
 
   li a.active {
     background: ${colors.quaternary};
-    border-bottom: 5px solid ${colors.failure};
+    border-bottom: 5px solid ${colors.red};
     border-bottom-right-radius: 3px;
     border-bottom-left-radius: 3px;
     transition: all 0.2s ease;

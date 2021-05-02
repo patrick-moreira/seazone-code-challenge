@@ -9,7 +9,7 @@ import logo from '../../assets/icons/seazone.svg';
 import { colors } from '../../assets/styles';
 
 function Header() {
-  const [activePage, setActivePage] = useState(3);
+  const [activePage, setActivePage] = useState(0);
 
   const getActivePage = () => {
     const elements = document.getElementsByTagName('a');
