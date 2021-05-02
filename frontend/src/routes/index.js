@@ -7,10 +7,10 @@ import Properties from '../pages/Properties';
 function Routes() {
   return (
     <BrowserRouter>
+      <Header />
       <Switch>
-        <Header />
         <Route path="/" exact />
-        <Route path="/properties" exact component={Properties} />
+        <Route path="/propriedades" component={Properties} />
       </Switch>
     </BrowserRouter>
   );

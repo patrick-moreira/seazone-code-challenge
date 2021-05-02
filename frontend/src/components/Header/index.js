@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 import { FaUserCircle } from 'react-icons/fa';
 import { FiArrowDown, FiMenu } from 'react-icons/fi';
 
@@ -30,49 +32,49 @@ function Header() {
         </Logo>
         <Menu>
           <li>
-            <a
-              href="#calendario"
+            <Link
+              to="/calendario"
               className="active"
               onClick={() => setActivePage(0)}
             >
               Calendário
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#clientes"
+            <Link
+              to="/clientes"
               className="inactive"
               onClick={() => setActivePage(1)}
             >
               Clientes
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#orcamentos"
+            <Link
+              to="/orcamentos"
               className="inactive"
               onClick={() => setActivePage(2)}
             >
               Orçamentos
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#propriedades"
+            <Link
+              to="/propriedades"
               className="inactive"
               onClick={() => setActivePage(3)}
             >
               Propriedades
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#controle"
+            <Link
+              to="/controle"
               className="inactive"
               onClick={() => setActivePage(4)}
             >
               Controle
-            </a>
+            </Link>
           </li>
         </Menu>
         <Profile>
