@@ -28,6 +28,10 @@ export default createGlobalStyle`
     border: 0;
   }
 
+  input {
+    border: 0;
+  }
+
   a {
     text-decoration: none;
   }
