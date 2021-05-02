@@ -1,5 +1,6 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
+import { FiCalendar } from 'react-icons/fi';
 import { Container, Content, ContentFilter } from './styles';
 import 'react-datepicker/dist/react-datepicker.css';
 
@@ -27,13 +28,18 @@ function Filter() {
 
         <ContentFilter>
           <label htmlFor="checkout">Check-in</label>
-          <div>
+          <div className="container-datepicker">
             <DatePicker
               name="checkin"
               selected={new Date()}
               onChange={() => {}}
               dateFormat="dd/MM/yyyy"
-              customInput={<input className="input-datepicker" />}
+              customInput={
+                <div>
+                  <input placeholder="22/04/2021" />
+                  <FiCalendar />
+                </div>
+              }
               locale="pt"
             />
           </div>
@@ -41,13 +47,18 @@ function Filter() {
 
         <ContentFilter>
           <label htmlFor="checkout">Check-out</label>
-          <div>
+          <div className="container-datepicker">
             <DatePicker
               name="checkout"
               selected={new Date()}
               onChange={() => {}}
               dateFormat="dd/MM/yyyy"
-              customInput={<input className="input-datepicker" />}
+              customInput={
+                <div>
+                  <input placeholder="27/04/2021" />
+                  <FiCalendar />
+                </div>
+              }
               locale="pt"
             />
           </div>
@@ -55,23 +66,23 @@ function Filter() {
 
         <ContentFilter>
           <label htmlFor="guests">N° de hóspedes</label>
-          <div>
-            <button className="btns-rm-add-guests" type="button">
+          <div className="container-btns-rm-add-guests">
+            <button type="button">
               <strong>-</strong>
             </button>
             <span>2</span>
-            <button className="btns-rm-add-guests" type="button">
+            <button type="button">
               <strong>+</strong>
             </button>
           </div>
         </ContentFilter>
 
         <ContentFilter>
-          <div>
-            <button className="btns-search-filters" type="button">
+          <div className="container-btns-search-filters">
+            <button type="button">
               <strong>Buscar</strong>
             </button>
-            <button className="btns-search-filters" type="button">
+            <button type="button">
               <strong>+ Mais filtros</strong>
             </button>
           </div>

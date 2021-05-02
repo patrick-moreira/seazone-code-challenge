@@ -15,22 +15,49 @@ export const Content = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   align-items: center;
-  padding-top: 60px;
+  margin: 65px 0 24px 0;
 `;
 
 export const ContentFilter = styled.div`
-  margin-bottom: 1rem;
+  label {
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
 
-  div > select,
-  input {
-    width: 70%;
+  .container-datepicker,
+  .container-btns-rm-add-guests,
+  div > select {
+    width: 200px;
+    max-width: 70%;
     padding: 0.5rem;
     border: 1px solid ${colors.tertiary};
     border-radius: 5px;
     background: ${colors.white};
+    color: ${colors.quaternary};
   }
 
-  div > button.btns-rm-add-guests {
+  .container-datepicker {
+    padding: 0.25rem;
+  }
+
+  .container-datepicker input {
+    width: 70%;
+    text-align: center;
+  }
+  .container-datepicker svg {
+    width: 30%;
+    position: relative;
+    top: 0.1rem;
+  }
+
+  .container-btns-rm-add-guests {
+    padding: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-btns-rm-add-guests button {
     width: 20px;
     height: 20px;
     margin: 0 1rem;
@@ -39,12 +66,12 @@ export const ContentFilter = styled.div`
     color: ${colors.tertiary};
   }
 
-  div > button.btns-rm-add-guests:last-child {
+  .container-btns-rm-add-guests button:last-child {
     border-color: ${colors.quaternary};
     color: ${colors.quaternary};
   }
 
-  div > button.btns-search-filters {
+  .container-btns-search-filters button {
     padding: 0.6rem;
     margin-top: 1.5rem;
     border-radius: 8px;
@@ -52,10 +79,8 @@ export const ContentFilter = styled.div`
     color: ${colors.secondary};
   }
 
-  div > button.btns-search-filters:last-child {
+  .container-btns-search-filters button:last-child {
     background: ${colors.secondary};
     color: ${colors.red};
   }
-  /* @media (max-width: 700px) {
-  } */
 `;
