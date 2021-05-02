@@ -22,15 +22,10 @@ export default createGlobalStyle`
     border: 0;
   }
 
-  #root {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   button {
     cursor: pointer;
     background: none;
+    border: 0;
   }
 
   a {
