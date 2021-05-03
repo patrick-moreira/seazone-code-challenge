@@ -11,7 +11,12 @@ function Card() {
     <Container>
       <Content>
         <div className="wrapper-img-background">
-          <img src={img1} alt="Imagem 1" />
+          <figure>
+            <img src={img1} alt="Imagem 1" />
+            <figcaption>
+              <h1>Detalhes</h1>
+            </figcaption>
+          </figure>
           <div>
             <div>
               <img src={logoAirbnb} alt="Logo Airbnb" />
