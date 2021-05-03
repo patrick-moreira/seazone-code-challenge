@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: auto;
 `;
 
@@ -35,6 +35,6 @@ export const Content = styled.div`
   .wrapper-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 2rem;
   }
 `;

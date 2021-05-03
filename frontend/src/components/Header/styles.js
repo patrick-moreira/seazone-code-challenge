@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors } from '../../assets/styles';
 
 export const Container = styled.header`
-  width: 100vw;
+  width: 100%;
   height: 50px;
   background: ${colors.primary};
   display: flex;
