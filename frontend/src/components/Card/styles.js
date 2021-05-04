@@ -1,81 +1,89 @@
 import styled from 'styled-components';
-import colors from '../../assets/styles/colors';
+import { colors, metrics } from '../../assets/styles';
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+export const Container = styled.div``;
 
 export const Content = styled.div`
   width: 100%;
   height: auto;
-  margin-top: 1rem;
-  cursor: pointer;
-
-  .wrapper-img-background figure img {
-    width: 100%;
-    height: 15vh;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  .wrapper-img-background div {
-    display: flex;
-    position: relative;
-    top: -27px;
+  margin: ${metrics.space.big}rem 0;
+  padding: ${metrics.space.small - 0.2}rem;
+  border: 1px solid ${colors.tertiary};
+  border-radius: 10px;
+  background: ${colors.white};
+  p,
+  strong {
+    font-size: ${metrics.font_size.regular}rem;
+    line-height: ${metrics.space.bigger}rem;
   }
 
-  .wrapper-img-background div > div {
-    width: 40px;
-    height: 40px;
-    margin-left: 0.5rem;
-    border-radius: 50%;
-    background: ${colors.secondary};
-    cursor: pointer;
-    :hover {
-      background: ${colors.primary};
-    }
-  }
-
-  .wrapper-img-background div > div img {
-    width: 100%;
-    height: auto;
-    padding: 6px;
-  }
-
-  .wrapper-img-background figure figcaption {
-    display: none;
-  }
-
-  :hover {
-    .wrapper-img-background > figure img {
-      border: 5px solid ${colors.tertiary};
-      object-fit: contain;
-      border-radius: 8px;
-      transition: all 0.5s ease-in-out;
-      height: auto;
-      opacity: 0.6;
+  .wrapper-img-background {
+    figure img {
+      width: 100%;
+      height: 15vh;
+      border-radius: 10px;
+      object-fit: cover;
+      cursor: pointer;
     }
 
-    .wrapper-img-background figure figcaption {
-      text-align: center;
-      font: 700 1.2rem Poppins;
-      color: ${colors.quaternary};
+    div {
+      width: 30%;
+      display: flex;
       position: relative;
-      z-index: 2;
-      display: block;
-      top: -150px;
-      left: 0;
+      top: -27px;
+    }
+
+    div > div {
+      width: 40px;
+      height: 40px;
+
+      margin-left: ${metrics.space.smaller}rem;
+      border-radius: 50%;
+      background: ${colors.secondary};
+      cursor: pointer;
+      :hover {
+        background: ${colors.primary};
+      }
+    }
+
+    div > div img {
+      width: 100%;
+      height: auto;
+      padding: 6px;
+    }
+
+    figure figcaption {
+      display: none;
+      cursor: pointer;
+    }
+
+    figure:hover {
+      img {
+        border: 5px solid ${colors.tertiary};
+        object-fit: contain;
+        border-radius: 8px;
+        transition: all 0.2s ease-in;
+        height: auto;
+        opacity: 0.6;
+      }
+
+      figcaption {
+        text-align: center;
+        color: ${colors.quaternary};
+        position: relative;
+        display: block;
+        top: -140px;
+      }
     }
   }
+
   .wrapper-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid ${colors.tertiary};
+    border-top: 1px dotted ${colors.tertiary};
 
     svg {
-      margin-left: 1rem;
       cursor: pointer;
     }
   }
@@ -84,25 +92,18 @@ export const Content = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-top: 1px solid ${colors.tertiary};
-    border-bottom: 1px solid ${colors.tertiary};
-  }
+    border-top: 1px dotted ${colors.tertiary};
 
-  .wrapper-details div:last-child {
-    text-align: right;
-  }
+    div:last-child {
+      text-align: right;
+    }
 
-  p,
-  strong {
-    font-size: 0.8rem;
-    line-height: 1.4rem;
-  }
+    p > strong {
+      color: ${colors.green};
+    }
 
-  .wrapper-details p > strong {
-    color: ${colors.green};
-  }
-
-  .wrapper-details p > strong > span {
-    font-weight: normal;
+    p > strong > span {
+      font-weight: ${metrics.font_weight.normal};
+    }
   }
 `;

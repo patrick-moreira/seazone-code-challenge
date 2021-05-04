@@ -13,7 +13,7 @@ function Card() {
         <div className="wrapper-img-background">
           <figure>
             <img src={img1} alt="Imagem 1" />
-            <figcaption>
+            <figcaption className="caption">
               <h1>Detalhes</h1>
             </figcaption>
           </figure>

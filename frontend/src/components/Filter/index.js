@@ -1,32 +1,32 @@
 import React from 'react';
 import DatePicker from 'react-datepicker';
 import { FiCalendar } from 'react-icons/fi';
-import { Container, Content, ContentFilter } from './styles';
+import { Container, Content } from './styles';
 import 'react-datepicker/dist/react-datepicker.css';
 
 function Filter() {
   return (
-    <Container>
+    <Container className="container">
       <Content>
-        <ContentFilter>
+        <div className="wrapper-filter">
           <label htmlFor="location">Localização</label>
           <div>
             <select id="location">
               <option value="location">Florianópolis</option>
             </select>
           </div>
-        </ContentFilter>
+        </div>
 
-        <ContentFilter>
+        <div className="wrapper-filter">
           <label htmlFor="price">Preço</label>
           <div>
             <select id="price">
               <option value="price">300-10000</option>
             </select>
           </div>
-        </ContentFilter>
+        </div>
 
-        <ContentFilter>
+        <div className="wrapper-filter">
           <label htmlFor="checkout">Check-in</label>
           <div className="container-datepicker">
             <DatePicker
@@ -43,9 +43,9 @@ function Filter() {
               locale="pt"
             />
           </div>
-        </ContentFilter>
+        </div>
 
-        <ContentFilter>
+        <div className="wrapper-filter">
           <label htmlFor="checkout">Check-out</label>
           <div className="container-datepicker">
             <DatePicker
@@ -62,9 +62,9 @@ function Filter() {
               locale="pt"
             />
           </div>
-        </ContentFilter>
+        </div>
 
-        <ContentFilter>
+        <div className="wrapper-filter">
           <label htmlFor="guests">N° de hóspedes</label>
           <div className="container-btns-rm-add-guests">
             <button type="button">
@@ -75,9 +75,9 @@ function Filter() {
               <strong>+</strong>
             </button>
           </div>
-        </ContentFilter>
+        </div>
 
-        <ContentFilter>
+        <div className="wrapper-filter">
           <div className="container-btns-search-filters">
             <button type="button">
               <strong>Buscar</strong>
@@ -86,7 +86,7 @@ function Filter() {
               <strong>+ Mais filtros</strong>
             </button>
           </div>
-        </ContentFilter>
+        </div>
       </Content>
     </Container>
   );

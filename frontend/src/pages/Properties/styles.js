@@ -1,31 +1,23 @@
 import styled from 'styled-components';
-import colors from '../../assets/styles/colors';
+import { colors, metrics } from '../../assets/styles';
 
-export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-`;
+export const Container = styled.div``;
 
 export const Content = styled.div`
-  width: 80%;
-  margin: 1rem;
+  width: 100%;
+  margin: ${metrics.space.big}rem 0;
 
   .wrapper-imoveis {
     display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 
   .wrapper-imoveis span {
     color: ${colors.quaternary};
-    font-size: 0.9rem;
   }
 
   .wrapper-imoveis div:last-child > select {
-    padding: 0.5rem;
+    padding: ${metrics.space.smaller}rem;
     border: 1px solid ${colors.tertiary};
     border-radius: 5px;
     background: ${colors.white};
@@ -35,6 +27,6 @@ export const Content = styled.div`
   .wrapper-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: 2rem;
+    grid-gap: ${metrics.space.bigger}rem;
   }
 `;

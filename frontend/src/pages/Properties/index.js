@@ -8,7 +8,7 @@ function Properties() {
   return (
     <>
       <Filter />
-      <Container>
+      <Container className="container">
         <Content>
           <div className="wrapper-imoveis">
             <div>
