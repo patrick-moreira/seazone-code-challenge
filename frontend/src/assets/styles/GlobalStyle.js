@@ -1,44 +1,54 @@
 import { createGlobalStyle } from 'styled-components';
-import { colors } from '.';
+import { colors, metrics } from '.';
 
 export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 0;
   }
 
   html, body, #root {
-    max-width: 100vw;
-    max-height: 100vh;
     width: 100%;
-    height: 100%;
+    height: auto;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   body {
     background: ${colors.secondary};
     color: ${colors.primary};
-    font: 400 1rem Poppins;
-    border: 0;
+    font: ${metrics.font_weight.normal} ${metrics.font_size.medium}rem Poppins;
   }
 
   button {
     cursor: pointer;
     background: none;
-    border: 0;
-  }
-
-  input {
-    border: 0;
   }
 
   a {
     text-decoration: none;
   }
 
+  .container{
+    width: 80%;
+    max-width: 1080px;
+  }
+
+  :root{
+    font-size: 62.5%;
+  }
+
   @media(max-width: 840px){
     :root{
-      font-size: 62.5%;
+      font-size: 52.5%;
     }
   }
+
 `;
