@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { colors } from '../../assets/styles';
+import { colors, metrics } from '../../assets/styles';
 
 export const Container = styled.header`
   width: 100%;
   height: 50px;
   background: ${colors.primary};
   display: flex;
+  justify-content: center;
   align-items: center;
   top: 0;
   position: fixed;
@@ -15,18 +16,17 @@ export const Container = styled.header`
 export const Navbar = styled.nav`
   display: grid;
   width: calc(100% - 30px);
-  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   grid-template-areas: 'logo items items profiler';
   align-items: center;
 `;
 
 export const Logo = styled.div`
   grid-area: logo;
-  width: 8rem;
+  max-width: 13rem;
   img {
     width: 100%;
     height: auto;
-    padding-left: 1rem;
   }
 `;
 
@@ -37,14 +37,13 @@ export const Menu = styled.ul`
 
   li a {
     color: ${colors.secondary};
-    font: 700 1rem Poppins;
-    padding: 0.8rem;
-    margin: 0.3rem;
+    padding: 16px 0.8rem;
+    margin: 0 0.3rem;
   }
 
   li a:hover {
     background: ${colors.quaternary};
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease;
   }
 
   li a.active {
@@ -55,7 +54,13 @@ export const Menu = styled.ul`
     transition: all 0.2s ease;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 640px) {
+    li a {
+      font-size: ${metrics.font_size.regular}rem;
+    }
+  }
+
+  @media (max-width: 600px) {
     li a {
       display: none;
     }
@@ -65,8 +70,9 @@ export const Menu = styled.ul`
 export const Profile = styled.div`
   grid-area: profiler;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
 
   div:first-child {
     position: absolute;
@@ -74,7 +80,7 @@ export const Profile = styled.div`
   }
 
   div:first-child svg {
-    width: 50%;
+    width: 30px;
     height: auto;
     fill: ${colors.tertiary};
     cursor: pointer;
@@ -94,7 +100,7 @@ export const Profile = styled.div`
     cursor: pointer;
   }
 
-  @media (max-width: 540px) {
+  @media (max-width: 600px) {
     div:first-child {
       display: none;
     }
