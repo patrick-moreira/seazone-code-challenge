@@ -37,8 +37,8 @@ export const Menu = styled.ul`
 
   li a {
     color: ${colors.secondary};
-    padding: 16px 0.8rem;
-    margin: 0 0.3rem;
+    padding: 16px ${metrics.space.smaller + 0.3}rem;
+    margin: 0 ${metrics.space.smaller - 0.2}rem;
   }
 
   li a:hover {
