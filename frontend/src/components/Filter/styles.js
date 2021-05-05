@@ -41,14 +41,14 @@ export const Content = styled.div`
       svg {
         width: 30%;
         position: relative;
-        top: 0.1rem;
+        top: 0.3rem;
       }
     }
 
     .container-btns-rm-add-guests {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      justify-content: center;
       padding: ${metrics.space.smaller + 0.2}rem;
 
       button {
@@ -66,14 +66,18 @@ export const Content = styled.div`
       }
     }
 
-    .container-btns-search-filters button {
-      padding: ${metrics.space.small}rem;
-      margin-top: ${metrics.space.big * 2 - 0.4}rem;
-      border-radius: 8px;
-      background: ${colors.red};
-      color: ${colors.secondary};
-
-      :last-child {
+    .container-btns-search-filters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        padding: ${metrics.space.small}rem;
+        margin-top: ${metrics.space.big * 2 - 0.4}rem;
+        border-radius: 8px;
+        background: ${colors.red};
+        color: ${colors.secondary};
+      }
+      button:last-child {
         background: ${colors.secondary};
         color: ${colors.red};
       }
