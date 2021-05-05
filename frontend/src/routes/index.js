@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Header from '../components/Header';
 import Properties from '../pages/Properties';
+import Details from '../pages/Details';
 
 function Routes() {
   return (
@@ -10,7 +11,8 @@ function Routes() {
       <Header />
       <Switch>
         <Route path="/" exact />
-        <Route path="/propriedades" component={Properties} />
+        <Route path="/propriedades" exact component={Properties} />
+        <Route path="/propriedades/detalhes/:id" component={Details} />
       </Switch>
     </BrowserRouter>
   );

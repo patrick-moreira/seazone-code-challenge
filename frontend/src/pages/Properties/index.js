@@ -1,12 +1,18 @@
 import React from 'react';
-import { Container, Content } from './styles';
 
 import Filter from '../../components/Filter';
 import Card from '../../components/Card';
 
+import data from '../../dataset/imoveis.json';
+
+import { Container, Content } from './styles';
+
 function Properties() {
+  const imoveis = data;
+
   return (
     <>
+      {imoveis.map((i) => console.log(i.name))};
       <Filter />
       <Container className="container">
         <Content>
