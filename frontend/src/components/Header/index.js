@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FaUserCircle } from 'react-icons/fa';
-import { FiArrowDown, FiMenu } from 'react-icons/fi';
+import { MdArrowDropDown, MdMenu } from 'react-icons/md';
 
 import { Container, Navbar, Logo, Menu, Profile } from './styles';
 import logo from '../../assets/icons/seazone.svg';
@@ -80,10 +80,10 @@ function Header() {
         <Profile>
           <div>
             <FaUserCircle />
-            <FiArrowDown />
+            <MdArrowDropDown />
           </div>
           <div>
-            <FiMenu color={colors.secondary} />
+            <MdMenu color={colors.secondary} />
           </div>
         </Profile>
       </Navbar>
