@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 import { FiMoreVertical } from 'react-icons/fi';
 import { Container, Content } from './styles';
 import img1 from '../../assets/images/imoveis/1.png';
@@ -11,12 +11,14 @@ function Card() {
     <Container>
       <Content>
         <div className="wrapper-img-background">
-          <figure>
-            <img src={img1} alt="Imagem 1" />
-            <figcaption className="caption">
-              <h1>Detalhes</h1>
-            </figcaption>
-          </figure>
+          <Link to="/propriedades/detalhes/1">
+            <figure>
+              <img src={img1} alt="Imagem 1" />
+              <figcaption className="caption">
+                <h1>Detalhes</h1>
+              </figcaption>
+            </figure>
+          </Link>
           <div>
             <div>
               <img src={logoAirbnb} alt="Logo Airbnb" />
