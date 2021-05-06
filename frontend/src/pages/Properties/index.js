@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Filter from '../../components/Filter';
 import Card from '../../components/Card';
 
+import logo from '../../assets/icons/seazone-icon.svg';
 import data from '../../dataset/imoveis.json';
 
-import { Container, Content, WrapperImoveis, WrapperCards } from './styles';
+import {
+  Container,
+  Content,
+  WrapperImoveis,
+  WrapperCards,
+  LoadingStyled,
+} from './styles';
 
 function Properties() {
-  const imoveis = data;
+  const [loading, setLoading] = useState(false);
+  const [imoveis, setImoveis] = useState([]);
+
+  useEffect(() => {
+    setLoading(true);
+    setImoveis(data);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2200);
+  }, []);
 
   return (
     <>
@@ -26,11 +42,18 @@ function Properties() {
               </select>
             </div>
           </WrapperImoveis>
-          <WrapperCards>
-            {imoveis.map((imovel) => (
-              <Card key={imovel.id} data={imovel} />
-            ))}
-          </WrapperCards>
+          {loading ? (
+            <LoadingStyled>
+              <img src={logo} alt="" className="" />
+              <strong>Carregando...</strong>
+            </LoadingStyled>
+          ) : (
+            <WrapperCards>
+              {imoveis.map((imovel) => (
+                <Card key={imovel.id} data={imovel} />
+              ))}
+            </WrapperCards>
+          )}
         </Content>
       </Container>
     </>
