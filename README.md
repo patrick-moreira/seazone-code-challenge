@@ -9,7 +9,7 @@ Para testar a aplicação ambiente de desenvolvimento é necessário ter algumas
 2. [yarn v1.17.3+] (https://classic.yarnpkg.com/en/docs/install/#debian-stable)
 
 Uma vez que todas as dependências estejam instaladas corretamente é possível testar a aplicação.
-Dentro da pasta /frontend/ execute o comando:
+Dentro da pasta `/frontend/` execute o comando:
 
 1. `yarn install` - Para instalar todos os pacotes/dependências do projeto
 2. `yarn start` - Para inicializar a plicação no `localhost:3000`
