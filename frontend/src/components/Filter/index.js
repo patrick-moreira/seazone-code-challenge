@@ -2,31 +2,38 @@ import React from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { FiCalendar } from 'react-icons/fi';
-import { Container, Content } from './styles';
+import {
+  Container,
+  Content,
+  WrapperLocation,
+  WrapperPrice,
+  WrapperDatepicker,
+  WrapperBtns,
+} from './styles';
 
 function Filter() {
   return (
     <Container className="container">
       <Content>
-        <div className="wrapper-filter">
+        <WrapperLocation>
           <label htmlFor="location">Localização</label>
           <div>
             <select id="location">
               <option value="location">Florianópolis</option>
             </select>
           </div>
-        </div>
+        </WrapperLocation>
 
-        <div className="wrapper-filter">
+        <WrapperPrice>
           <label htmlFor="price">Preço</label>
           <div>
             <select id="price">
               <option value="price">300-10000</option>
             </select>
           </div>
-        </div>
+        </WrapperPrice>
 
-        <div className="wrapper-filter">
+        <WrapperDatepicker>
           <label htmlFor="checkout">Check-in</label>
           <div className="container-datepicker">
             <DatePicker
@@ -37,15 +44,15 @@ function Filter() {
               customInput={
                 <div>
                   <input placeholder="22/04/2021" />
-                  <FiCalendar />
+                  <FiCalendar size={16} />
                 </div>
               }
               locale="pt"
             />
           </div>
-        </div>
+        </WrapperDatepicker>
 
-        <div className="wrapper-filter">
+        <WrapperDatepicker>
           <label htmlFor="checkout">Check-out</label>
           <div className="container-datepicker">
             <DatePicker
@@ -56,17 +63,17 @@ function Filter() {
               customInput={
                 <div>
                   <input placeholder="27/04/2021" />
-                  <FiCalendar />
+                  <FiCalendar size={16} />
                 </div>
               }
               locale="pt"
             />
           </div>
-        </div>
+        </WrapperDatepicker>
 
-        <div className="wrapper-filter">
+        <WrapperBtns>
           <label htmlFor="guests">N° de hóspedes</label>
-          <div className="container-btns-rm-add-guests">
+          <div className="container-btns-add-remove">
             <button type="button">
               <strong>-</strong>
             </button>
@@ -75,9 +82,9 @@ function Filter() {
               <strong>+</strong>
             </button>
           </div>
-        </div>
+        </WrapperBtns>
 
-        <div className="wrapper-filter">
+        <WrapperBtns>
           <div className="container-btns-search-filters">
             <button type="button">
               <strong>Buscar</strong>
@@ -86,7 +93,7 @@ function Filter() {
               <strong>+ Mais filtros</strong>
             </button>
           </div>
-        </div>
+        </WrapperBtns>
       </Content>
     </Container>
   );
