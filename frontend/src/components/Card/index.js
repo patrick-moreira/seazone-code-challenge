@@ -10,7 +10,6 @@ import {
   WrapperDetails,
 } from './styles';
 
-import img1 from '../../assets/images/imoveis/1.png';
 import logoAirbnb from '../../assets/icons/airbnb-icon.svg';
 import logoSeazone from '../../assets/icons/seazone-icon.svg';
 
@@ -26,7 +25,12 @@ function Card({ data }) {
             }}
           >
             <figure>
-              <img src={img1} alt="Imagem 1" />
+              <img
+                src={
+                  require(`../../assets/images/imoveis/${data.img}.png`).default // eslint-disable-line import/no-dynamic-require
+                }
+                alt="Imagem do Imóvel"
+              />
               <figcaption>
                 <h1>Detalhes</h1>
               </figcaption>

@@ -14,7 +14,6 @@ import {
   WrapperComforts,
   StrongStyled,
 } from './styles';
-import img from '../../assets/images/imoveis/1.png';
 
 function Details() {
   const location = useLocation();
@@ -39,7 +38,12 @@ function Details() {
           </WrapperHeader>
 
           <WrapperLocation>
-            <img src={img} alt={data.name} />
+            <img
+              src={
+                require(`../../assets/images/imoveis/${data.img}.png`).default // eslint-disable-line import/no-dynamic-require
+              }
+              alt="Imagem do Imóvel"
+            />
             <div>
               <h4>Localização</h4>
               <p>
