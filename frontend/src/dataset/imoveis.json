@@ -15,15 +15,17 @@
       "cep": "89650-100"
     },
     "status": "ativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "1"
+
   },
   {
     "id": 2,
     "name": "ILC2307 - Suite Top vista mar resort Jurere",
-    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
-    "max_guests": 6,
-    "cleaning_fee": 50.0,
-    "caucao": 700.0,
+    "description": "Relaxar, desestressar e curtir o sol em um dos lugares mais bonitos do Brasil e em uma das suítes mais premium de Jurere Internacional.",
+    "max_guests": 3,
+    "cleaning_fee": 75.0,
+    "caucao": 400.0,
     "address": {
       "lagradouro": "AV. Búzios",
       "number": 1800,
@@ -33,15 +35,16 @@
       "cep": "89650-100"
     },
     "status": "inativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "2"
   },
   {
     "id": 3,
-    "name": "ILC2307 - Suite Top vista mar resort Jurere",
-    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
-    "max_guests": 6,
-    "cleaning_fee": 50.0,
-    "caucao": 700.0,
+    "name": "CPS107 - Apto centralizado c/ mobília nova em Jurerê",
+    "description": "Apartamento espaçoso e aconchegante e com ótima localização na avenida principal de Jurerê. Sua mobilia é planejada e é ideal para casais, famílias ou amigos, tanto para passar as férias, final de semana, ou até mesmo trabalhar.",
+    "max_guests": 8,
+    "cleaning_fee": 100.0,
+    "caucao": 1200.0,
     "address": {
       "lagradouro": "AV. Búzios",
       "number": 1800,
@@ -51,15 +54,16 @@
       "cep": "89650-100"
     },
     "status": "ativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "3"
   },
   {
     "id": 4,
-    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "name": "PSD205 - Conforto e tranquilidade na quadra do mar",
     "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
-    "max_guests": 6,
-    "cleaning_fee": 50.0,
-    "caucao": 700.0,
+    "max_guests": 4,
+    "cleaning_fee": 75.0,
+    "caucao": 950.0,
     "address": {
       "lagradouro": "AV. Búzios",
       "number": 1800,
@@ -69,15 +73,16 @@
       "cep": "89650-100"
     },
     "status": "ativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "4"
   },
   {
     "id": 5,
-    "name": "ILC2307 - Suite Top vista mar resort Jurere",
-    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
-    "max_guests": 6,
-    "cleaning_fee": 50.0,
-    "caucao": 700.0,
+    "name": "CVJ302 - Cobertura família c/ churrasqueira piscina",
+    "description": "Cobertura maravilhosa, super mobiliada, com piscina privativa, cozinha completa, mesa de jantar, sala de estar, 3 suítes com ar condicionado. Ideal para famílias.",
+    "max_guests": 8,
+    "cleaning_fee": 100.0,
+    "caucao": 1000.0,
     "address": {
       "lagradouro": "AV. Búzios",
       "number": 1800,
@@ -87,13 +92,14 @@
       "cep": "89650-100"
     },
     "status": "inativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "5"
   },
   {
     "id": 6,
-    "name": "ILC2307 - Suite Top vista mar resort Jurere",
-    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
-    "max_guests": 6,
+    "name": "ILC4415 - Suíte de frente p/ mar em resort incrível",
+    "description": "Relaxar, desestressar e curtir o sol em um dos lugares mais bonitos do Brasil e em uma das suítes mais premium de Jurerê Internacional.",
+    "max_guests": 4,
     "cleaning_fee": 50.0,
     "caucao": 700.0,
     "address": {
@@ -105,6 +111,7 @@
       "cep": "89650-100"
     },
     "status": "ativo",
-    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"],
+    "img": "6"
   }
 ]
