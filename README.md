@@ -17,4 +17,4 @@ Dentro da pasta /frontend/ execute o comando:
 ### Deploy
 A aplicação pode ser facilmente testada em:
 
-`(https://seazone.netlify.app)`
+https://seazone.netlify.app
