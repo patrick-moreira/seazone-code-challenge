@@ -6,27 +6,27 @@ export const Container = styled.div``;
 export const Content = styled.div`
   width: 100%;
   margin: ${metrics.space.big}rem 0;
+`;
 
-  .wrapper-imoveis {
-    display: flex;
-    justify-content: space-between;
-  }
+export const WrapperImoveis = styled.section`
+  display: flex;
+  justify-content: space-between;
 
-  .wrapper-imoveis span {
+  span {
     color: ${colors.quaternary};
   }
 
-  .wrapper-imoveis div:last-child > select {
+  div:last-child > select {
     padding: ${metrics.space.smaller}rem;
     border: 1px solid ${colors.tertiary};
     border-radius: 5px;
     background: ${colors.white};
     color: ${colors.quaternary};
   }
+`;
 
-  .wrapper-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    grid-gap: ${metrics.space.bigger}rem;
-  }
+export const WrapperCards = styled.section`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: ${metrics.space.bigger}rem;
 `;
