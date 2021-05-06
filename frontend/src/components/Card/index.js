@@ -1,20 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMoreVertical } from 'react-icons/fi';
-import { Container, Content } from './styles';
+import { FiInfo } from 'react-icons/fi';
+
+import {
+  Container,
+  Content,
+  WrapperImage,
+  WrapperTitle,
+  WrapperDetails,
+} from './styles';
+
 import img1 from '../../assets/images/imoveis/1.png';
 import logoAirbnb from '../../assets/icons/airbnb-icon.svg';
 import logoSeazone from '../../assets/icons/seazone-icon.svg';
 
-function Card() {
+function Card({ data }) {
   return (
     <Container>
       <Content>
-        <div className="wrapper-img-background">
-          <Link to="/propriedades/detalhes/1">
+        <WrapperImage>
+          <Link
+            to={{
+              pathname: `/propriedades/detalhes/${data.id}`,
+              state: { data },
+            }}
+          >
             <figure>
               <img src={img1} alt="Imagem 1" />
-              <figcaption className="caption">
+              <figcaption>
                 <h1>Detalhes</h1>
               </figcaption>
             </figure>
@@ -27,34 +40,31 @@ function Card() {
               <img src={logoSeazone} alt="Logo Seazone" />
             </div>
           </div>
-        </div>
-        <div className="wrapper-title">
-          <h4>JBM202 - Suite Top vista mar resort Jurere</h4>
-          <FiMoreVertical />
-        </div>
-        <p>Jurerê Internacional . 8 hóspedes . 2 quartos</p>
-        <div className="wrapper-details">
+        </WrapperImage>
+
+        <WrapperTitle>
           <div>
-            <p>Valor diária</p>
-            <p>Total 5 diárias</p>
-            <p>Total de limpeza</p>
+            <h4>{data.name}</h4>
+            <FiInfo size={22} />
+          </div>
+          <strong>{data.address.district}</strong>
+          <p>
+            <strong>Descrição:</strong> {data.description}
+          </p>
+        </WrapperTitle>
+
+        <WrapperDetails>
+          <div>
+            <p>Máx. de hóspedes:</p>
+            <p>Taxa de limpeza:</p>
             <p>Caução:</p>
-            <strong>Total:</strong>
           </div>
           <div>
-            <p>R$700,00 / noite</p>
-            <p>R$3500,00</p>
-            <p>R$200,00</p>
-            <p>R$1850,00</p>
-            <p>
-              R$3700,00 |{' '}
-              <strong>
-                R$3330 <br />
-                <span>à vista</span>
-              </strong>
-            </p>
+            <p>{data.max_guests}</p>
+            <p>R${data.cleaning_fee.toFixed(2).toString().replace('.', ',')}</p>
+            <p>R${data.caucao.toFixed(2).toString().replace('.', ',')}</p>
           </div>
-        </div>
+        </WrapperDetails>
       </Content>
     </Container>
   );
