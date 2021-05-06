@@ -90,3 +90,8 @@ export const WrapperBtns = styled(WrapperLocation)`
     }
   }
 `;
+
+export const HorizontalRow = styled.hr`
+  width: 100%;
+  border: 0.5px dotted ${colors.tertiary};
+`;
