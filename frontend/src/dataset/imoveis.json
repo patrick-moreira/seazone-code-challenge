@@ -1,10 +1,110 @@
 [
   {
     "id": 1,
-    "name": "imovel 1"
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "ativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
   },
   {
     "id": 2,
-    "name": "imovel 2"
-}
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "inativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+  },
+  {
+    "id": 3,
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "ativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+  },
+  {
+    "id": 4,
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "ativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+  },
+  {
+    "id": 5,
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "inativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+  },
+  {
+    "id": 6,
+    "name": "ILC2307 - Suite Top vista mar resort Jurere",
+    "description": "Apartamento com localização perfeita para solteiros ou casais que gostam de curtir o movimento de bares e restaurantes de Jurere Internacional sem precisar andar muito.",
+    "max_guests": 6,
+    "cleaning_fee": 50.0,
+    "caucao": 700.0,
+    "address": {
+      "lagradouro": "AV. Búzios",
+      "number": 1800,
+      "district": "Jurerê Internacional",
+      "citie": "Florianópolis",
+      "uf": "SC",
+      "cep": "89650-100"
+    },
+    "status": "ativo",
+    "comforts": ["TV=sim", "Wi-fi=nao", "Estacionamento=sim", "Elevador=nao"]
+  }
 ]
