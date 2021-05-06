@@ -1,6 +1,6 @@
 # Seazone Code Challenge
 
-Este repositório contém o código fonte do desafio de criar duas páginas de visualização e busca de imóveis cadastrados no sistema de gerenciamento de imóveis da Seazone. A estrutura do projeto está organizada em 6 pastas: `assets`: que contém ícones, imagens, métricas e estilos globais utilizados no projeto; `components`: que contém os components desenvolvidos; `dataset`: que contém um arquivo .json com os dados presentes nas telas; `pages`: que contém as páginas implementadas; `routes`: onde estão configuradas as rotas da aplicação. 
+Este repositório contém o código fonte do desafio de criar duas páginas de visualização e busca de imóveis cadastrados no sistema de gerenciamento de imóveis da Seazone. A estrutura do projeto está organizada em 6 pastas: `assets`: que contém ícones, imagens, métricas e estilos globais utilizados no projeto; `components`: que contém os componentes desenvolvidos; `dataset`: que contém um arquivo imoveis.json com os dados presentes nas telas; `pages`: que contém as páginas implementadas; `routes`: onde estão configuradas as rotas da aplicação. 
 
 ### Ambiente de desenvolvimento
 Para testar a aplicação ambiente de desenvolvimento é necessário ter algumas dependências previamente instaladas:
