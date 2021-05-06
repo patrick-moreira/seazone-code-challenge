@@ -12,7 +12,7 @@ Uma vez que todas as dependências estejam instaladas corretamente é possível 
 Dentro da pasta `/frontend/` execute os comandos:
 
 1. `yarn install` - Para instalar todos os pacotes/dependências do projeto
-2. `yarn start` - Para inicializar a plicação no `localhost:3000`
+2. `yarn start` - Para inicializar a aplicação no `localhost:3000`
 
 ### Deploy
 A aplicação pode ser facilmente testada em:
